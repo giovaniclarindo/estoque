@@ -14,6 +14,7 @@ class ProdutoController extends Controller
      */
     public function index()
     {
+        //dd('ENTROU NO INDEX');
         $produtos = Produto::orderBy('nome', 'ASC')->get();
         dd($produtos);
     }
@@ -47,7 +48,9 @@ class ProdutoController extends Controller
      */
     public function show($id)
     {
-        //
+        //dd('ENTROU NO SHOW');
+        $produto = Produto::find($id);
+        dd($produto);
     }
 
     /**
