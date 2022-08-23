@@ -89,7 +89,7 @@ class ProdutoController extends Controller
       $produto->valor           = $request->valor;
       $produto->save();
 
-      return view('/produto')->with('status', 'Produto atualizado com sucesso!');
+      return redirect('/produto')->with('status', 'Produto atualizado com sucesso!');
 
     }
 
