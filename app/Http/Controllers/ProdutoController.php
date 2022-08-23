@@ -14,9 +14,9 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-        //dd('ENTROU NO INDEX');
+        
         $produtos = Produto::orderBy('nome', 'ASC')->get();
-        dd($produtos);
+        return view('produto.produto_index', ['produtos' => $produtos]);
     }
 
     /**
@@ -26,7 +26,7 @@ class ProdutoController extends Controller
      */
     public function create()
     {
-        //
+        return view('produto.produto_create');
     }
 
     /**
@@ -37,7 +37,14 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $produto = new Produto;
+      $produto->nome            = $request->nome;
+      $produto->quantidade      = $request->quantidade;
+      $produto->valor           = $request->valor;
+      $produto->save();
+
+      return redirect('/produto')->with('status', 'Produto criado com sucesso!');
+
     }
 
     /**
@@ -50,7 +57,9 @@ class ProdutoController extends Controller
     {
         //dd('ENTROU NO SHOW');
         $produto = Produto::find($id);
-        dd($produto);
+        //dd($produto);
+        return view('produto.produto_show', ['produto' => $produto]);
+
     }
 
     /**
@@ -61,7 +70,8 @@ class ProdutoController extends Controller
      */
     public function edit($id)
     {
-        //
+       $produto = Produto::find($id);
+       return view('produto.produto_edit', ['produto' => $produto]); 
     }
 
     /**
@@ -73,7 +83,14 @@ class ProdutoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $produto = Produto::find($id);
+      $produto->nome            = $request->nome;
+      $produto->quantidade      = $request->quantidade;
+      $produto->valor           = $request->valor;
+      $produto->save();
+
+      return view('/produto')->with('status', 'Produto atualizado com sucesso!');
+
     }
 
     /**
