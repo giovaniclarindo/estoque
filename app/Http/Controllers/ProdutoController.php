@@ -37,6 +37,22 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
+
+      $messages = [
+         'nome.required'  => 'O campo :attribute é obrigatorio!',
+         'nome.min'       => 'O :attribute precisa ter no mínimo :min.',
+         'quantidade.required'     => 'o :attribute é obrigatório!',
+         'quantidade.integer'     => 'o :attribute é obrigatória!'
+      ];
+
+
+      $validated = $request->validate([
+        'nome'          => 'required|min:8',
+        'quantidade'    => 'required|integer',
+        'valor'         => 'required',
+      ], $messages);
+
+
       $produto = new Produto;
       $produto->nome            = $request->nome;
       $produto->quantidade      = $request->quantidade;
@@ -101,6 +117,10 @@ class ProdutoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $produto = Produto::find($id);
+        $produto->delete();
+
+        return redirect('/produto')->with('status', 'Produto excluido com sucesso!');
+
     }
 }

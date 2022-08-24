@@ -33,8 +33,17 @@ Route::get('/produto/{id}/edit', [ProdutoController::class, 'edit'])->name('prod
 //update
 Route::put('/produto/{id}', [ProdutoController::class, 'update'])->name('produto.update');
 
+//delete
+Route::delete('/produto/{id}', [ProdutoController::class, 'destroy'])->name('produto.delete');
+
 
 
 
 //exibe um produto
 Route::get('/produto/{id}', [ProdutoController::class, 'show']);
+
+Route::get('/produtoupdate', [ProdutoController::class, 'store']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
