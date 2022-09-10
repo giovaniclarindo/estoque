@@ -16,19 +16,19 @@ class CategoriaSeeder extends Seeder
     public function run()
     {
         Categoria::create([
-
+            'id'   => 1,
             'nome' => 'Proteína'
 
         ]);
 
         Categoria::create([
-
+            'id'   => 2,
             'nome' => 'Carboidrato'
 
         ]);
 
         Categoria::create([
-
+            'id'   => 3,
             'nome' => 'Vegetal'
 
         ]);

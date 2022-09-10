@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nome');
             $table->integer('quantidade');
             $table->double('valor', 8, 2);
+            $table->integer('categoria_id');
             $table->timestamps();
         });
     }
