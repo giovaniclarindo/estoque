@@ -15,6 +15,10 @@
 
     {!! Form::open(['url' => 'produto/' . $produto->id, 'method' => 'put']) !!}
 
+    {{ Form::label('categoria', 'Categoria') }}<br>
+    {{ Form::select('categoria_id', $categorias) }}<br>
+    
+    
     {{ Form::label('nome', 'Nome:') }}<br>
     {{ Form::text('nome', $produto->nome) }}<br>
 

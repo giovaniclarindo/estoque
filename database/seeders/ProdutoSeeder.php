@@ -16,10 +16,10 @@ class ProdutoSeeder extends Seeder
     public function run()
     {
         Produto::create([
-            'nome'         => 'Abobrinha',
-            'quantidade'   => 10,
-            'valor'        => 7,
-            'categoria_id' => 3
+            'nome'         => 'frango',
+            'quantidade'   => 15,
+            'valor'        => 22,
+            'categoria_id' => 1
 
         ]);
 
@@ -31,10 +31,10 @@ class ProdutoSeeder extends Seeder
         ]);
 
         Produto::create([
-            'nome'         => 'Frango',
-            'quantidade'   => 15,
-            'valor'        => 22,
-            'categoria_id' => 1
+            'nome'         => 'Abobrinha',
+            'quantidade'   => 10,
+            'valor'        => 7,
+            'categoria_id' => 3
         ]);
     }
 }
