@@ -16,7 +16,7 @@
     {!! Form::open(['url' => 'produto/' . $produto->id, 'method' => 'put']) !!}
 
     {{ Form::label('categoria', 'Categoria') }}<br>
-    {{ Form::select('categoria_id', $categorias) }}<br>
+    {{ Form::select('categoria_id', $categorias, $produto->categoria_id) }}<br>
     
     
     {{ Form::label('nome', 'Nome:') }}<br>
