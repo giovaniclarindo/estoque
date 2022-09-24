@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,3 +72,12 @@ Route::put('/categoria/{id}', [CategoriaController::class, 'update'])->name('cat
 
 //delete
 Route::delete('/categoria/{id}', [CategoriaController::class, 'destroy'])->name('categoria.delete');
+
+
+
+
+//create
+Route::get('create_cliente', [UserController::class, 'create_cliente'])->name('create_cliente');
+
+//store
+Route::post('create_cliente', [UserController::class, 'store_cliente'])->name('store_cliente');
