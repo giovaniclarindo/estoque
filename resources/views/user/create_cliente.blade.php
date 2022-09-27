@@ -27,6 +27,10 @@
                     {{ Form::text('name', null , ['class' => 'form-control', 'placeholder' => 'Ex: Giovani'] )}}
                 </div>
                 <div class="col-6">
+                    {{ Form::label('cpf', 'CPF:') }}
+                    {{ Form::text('name', null , ['class' => 'form-control', 'placeholder' => 'Ex: 123.456.789-01'] )}}
+                </div>
+                <div class="col-6">
                     {{ Form::label('email', 'E-mail:') }}
                     {{ Form::text('email', null , ['class' => 'form-control', 'placeholder' => 'Ex: giovani@gmail.com'] ) }}
                 </div>
