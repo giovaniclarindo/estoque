@@ -1,4 +1,5 @@
-@extends('adminlte::page')
+@extends('layouts.app')
+{{-- @extends('adminlte::page') --}}
 
 @section('title', 'Dashboard')
 
@@ -28,11 +29,15 @@
                 </div>
                 <div class="col-6">
                     {{ Form::label('cpf', 'CPF:') }}
-                    {{ Form::text('name', null , ['class' => 'form-control', 'placeholder' => 'Ex: 123.456.789-01'] )}}
+                    {{ Form::text('cpf', null , ['class' => 'form-control', 'placeholder' => 'Ex: 123.456.789-01'] )}}
                 </div>
                 <div class="col-6">
                     {{ Form::label('email', 'E-mail:') }}
                     {{ Form::text('email', null , ['class' => 'form-control', 'placeholder' => 'Ex: giovani@gmail.com'] ) }}
+                </div>
+                <div class="col-6">
+                    {{ Form::label('perfil', 'Perfil:' , ['class' => 'form-select ']) }} 
+                    {{ Form::select('perfil', ['1' => 'Administrador', '2' => 'Ajudante'],null, array('class' => 'form-control ')) }} 
                 </div>
                 <div class="col-6">
                     {{ Form::label('password', 'Senha:') }}

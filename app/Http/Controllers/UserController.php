@@ -16,7 +16,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $user = User::orderBy('email', 'ASC')->get();
+        return view('user.index_cliente', ['user' => $user]);
     }
 
     /**
@@ -26,7 +27,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('user.create_cliente');
     }
 
     /**
@@ -37,7 +38,34 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $message = [
+            'name.required' => 'O campo nome é obrigatório!',
+            'name.min' => 'O campo nome precisa ter no mínimo :min caracteres!',
+            'cpf.required' => 'O campo CPF é obrigatório!',
+            'email.required' => 'O campo email é obrigatório!',
+            'email.email' => 'Este e-mail não é valido!',
+            'password.required' => 'O campo nome é obrigatório!',
+            'password.same' => 'As senham precisam ser identicas!',
+
+        ];
+
+        $validateData = $request->validate([
+            'name'          => 'required|min:3',
+            'cpf'           => 'required|max:11',
+            'email'         => 'required|email',
+            'password'      =>'required|same:confirm-password',
+        ], $message);
+
+
+        $user = new User;
+        $user->name         = $request->name;
+        $user->cpf          = $request->cpf;
+        $user->perfil       = $request->perfil;
+        $user->email        = $request->email;
+        $user->password     = Hash::make($request->password);
+        $user->save();
+
+        return redirect()->route('user.index')->with('message', "user {$user->nome} criado com sucesso!");
     }
 
     /**
@@ -48,7 +76,16 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+            $user = User::find($id);
+            
+            return view('user.show_cliente', ['user' => $user]);
+        }
+    
+        public function perfil()
+        {
+            $user = Auth::user();
+    
+            return view('user.perfil_cliente', ['user' => $user]);
     }
 
     /**
@@ -59,7 +96,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+
+        return view('user.edit_cliente', ['user' => $user]);
     }
 
     /**
@@ -82,7 +121,10 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+
+        return redirect()->route('user.index_cliente')->with('message', 'usuário excluido com sucesso!');
     }
 
 
@@ -107,6 +149,7 @@ class UserController extends Controller
         $message = [
             'name.required' => 'O campo nome é obrigatório!',
             'name.min' => 'O campo nome precisa ter no mínimo :min caracteres!',
+            'cpf.required' => 'O campo CPF é obrigatório!',
             'email.required' => 'O campo email é obrigatório!',
             'email.email' => 'Este e-mail não é valido!',
             'password.required' => 'O campo nome é obrigatório!',
@@ -116,6 +159,7 @@ class UserController extends Controller
 
         $validateData = $request->validate([
             'name'          => 'required|min:3',
+            'cpf'           => 'required|max:11',
             'email'         => 'required|email',
             'password'      =>'required|same:confirm-password',
         ], $message);
@@ -124,6 +168,7 @@ class UserController extends Controller
         $user = new User;
         $user->name         = $request->name;
         $user->perfil       = 'cliente';
+        $user->cpf          = $request->cpf;
         $user->email        = $request->email;
         $user->password     = Hash::make($request->password);
         $user->save();

@@ -81,3 +81,30 @@ Route::get('create_cliente', [UserController::class, 'create_cliente'])->name('c
 
 //store
 Route::post('create_cliente', [UserController::class, 'store_cliente'])->name('store_cliente');
+
+
+
+
+// ------------------- Rotas para user
+
+Route::get('/user', [UserController::class, 'index'])->middleware(['auth'])->name('user.index');
+
+
+Route::get('/user/create_cliente', [UserController::class, 'create'])->middleware(['auth'])->name('user.create');
+
+
+Route::post('/user/create_cliente', [UserController::class, 'store'])->middleware(['auth'])->name('user.store');
+
+Route::get('/user/{id}/edit_cliente' , [UserController::class, 'edit'])->middleware(['auth'])->name('user.edit_cliente');
+
+
+Route::put('/user/{id}', [UserController::class, 'update'])->middleware(['auth'])->name('user.update');
+
+
+Route::get('/user/perfil_cliente', [UserController::class, 'perfil'])->middleware(['auth'])->name('user.perfil_cliente');
+
+
+Route::get('/user/{id}', [UserController::class, 'show'])->middleware(['auth'])->name('user.show');
+
+
+Route::delete('/user/{id}', [UserController::class, 'destroy'])->middleware(['auth'])->name('user.destroy');
