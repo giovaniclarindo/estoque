@@ -36,6 +36,10 @@
                     {{ Form::text('email', null , ['class' => 'form-control', 'placeholder' => 'Ex: giovani@gmail.com'] ) }}
                 </div>
                 <div class="col-6">
+                    {{ Form::label('telefone', 'Telefone:') }}
+                    {{ Form::text('telefone', null , ['class' => 'form-control', 'placeholder' => 'Ex: (21) 9999-9999'] )}}
+                </div>
+                <div class="col-6">
                     {{ Form::label('password', 'Senha:') }}
                     {{ Form::password('password', ['class' => 'form-control', 'placeholder' => 'Digite uma senha forte']) }}
                 </div>
