@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1 style="text-align: center">Usuarios</h1>
+    <h1 style="text-align: center">Usuários</h1>
 @stop
 
 @section('content')
@@ -23,17 +23,19 @@
                     <td>Email</td>
                     <td>CPF</td>
                     <td>Nome</td>
+                    <td>Telefone</td>
                     <td>Ações</td>
                 </tr>
             </thead>      
             <tbody>
                     <tr>
-                        @foreach ($user as $key => $value )
+                        @foreach ($users as $key => $value )
                         <tr>
                             <td> {{$value->id}}</td>
                             <td> {{$value->email}}</td>
                             <td> {{$value->cpf}}</td>
                             <td> {{$value->name}}</td>
+                            <td> {{$value->telefone}}</td>
                             
                             <td><a class="btn btn-primary" href="{{ URL::to('user/' . $value->id) }}">visualizar</a></td>
                             <td><a class="btn btn-warning" href="{{ URL::to('user/' . $value->id . '/edit') }}">editar</a></td>

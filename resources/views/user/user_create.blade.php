@@ -1,5 +1,4 @@
-@extends('layouts.app')
-{{-- @extends('adminlte::page') --}}
+@extends('adminlte::page')
 
 @section('title', 'Dashboard')
 
@@ -21,7 +20,7 @@
     </div>
     @endif
 
-            {{ Form::open(array('url' => '/create_cliente')) }}
+            {{ Form::open(array('url' => '/user/create')) }}
             <div class="row">
                 <div class="col-6">
                     {{ Form::label('name', 'Nome:') }}
@@ -36,12 +35,20 @@
                     {{ Form::text('email', null , ['class' => 'form-control', 'placeholder' => 'Ex: giovani@gmail.com'] ) }}
                 </div>
                 <div class="col-6">
+                    {{ Form::label('telefone', 'Telefone:') }}
+                    {{ Form::text('telefone', null , ['class' => 'form-control', 'placeholder' => 'Ex: (21) 9999-9999'] )}}
+                </div>
+                <div class="col-6">
                     {{ Form::label('password', 'Senha:') }}
                     {{ Form::password('password', ['class' => 'form-control', 'placeholder' => 'Digite uma senha forte']) }}
                 </div>
                 <div class="col-6">
                     {{ Form::label('password', 'Confirmar senha:') }}
                     {{ Form::password('confirm-password', array('class' => 'form-control ', 'placeholder' => 'Digite novamente')) }}
+                </div>
+                <div class="col-6">
+                    {{ Form::label('perfil', 'Perfil:' , ['class' => 'form-select ']) }} 
+                    {{ Form::select('perfil', ['1' => 'Administrador', '2' => 'Ajudante'],null, array('class' => 'form-control ')) }} 
                 </div>
             </div>
             

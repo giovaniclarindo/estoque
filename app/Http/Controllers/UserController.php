@@ -16,8 +16,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        $user = User::orderBy('email', 'ASC')->get();
-        return view('user.index_cliente', ['user' => $user]);
+        $users = User::orderBy('email', 'ASC')->get();
+        return view('user.user_index', ['users' => $users]);
     }
 
     /**
@@ -27,7 +27,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('user.create_cliente');
+        return view('user.user_create');
     }
 
     /**
@@ -38,6 +38,9 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+
+        //dd($request->all());
+
         $message = [
             'name.required' => 'O campo nome é obrigatório!',
             'name.min' => 'O campo nome precisa ter no mínimo :min caracteres!',
@@ -60,6 +63,7 @@ class UserController extends Controller
         $user = new User;
         $user->name         = $request->name;
         $user->cpf          = $request->cpf;
+        $user->telefone     = $request->telefone;
         $user->perfil       = $request->perfil;
         $user->email        = $request->email;
         $user->password     = Hash::make($request->password);
@@ -78,15 +82,16 @@ class UserController extends Controller
     {
             $user = User::find($id);
             
-            return view('user.show_cliente', ['user' => $user]);
+            return view('user.user_show', ['user' => $user]);
         }
     
-        public function perfil()
-        {
+    /*
+    public function perfil()
+    {
             $user = Auth::user();
-    
             return view('user.perfil_cliente', ['user' => $user]);
     }
+    */
 
     /**
      * Show the form for editing the specified resource.
@@ -98,7 +103,7 @@ class UserController extends Controller
     {
         $user = User::find($id);
 
-        return view('user.edit_cliente', ['user' => $user]);
+        return view('user.user_edit', ['user' => $user]);
     }
 
     /**
@@ -110,7 +115,40 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        //dd($request->name);
+
+        $message = [
+            'name.required' => 'O campo nome é obrigatório!',
+            'name.min' => 'O campo nome precisa ter no mínimo :min caracteres!',
+            'cpf.required' => 'O campo CPF é obrigatório!',
+            'email.required' => 'O campo email é obrigatório!',
+            'email.email' => 'Este e-mail não é valido!',
+            //'password.required' => 'O campo nome é obrigatório!', // ERA AQUI
+            //'password.same' => 'As senham precisam ser identicas!',
+
+        ];
+
+        $validateData = $request->validate([
+            'name'          => 'required|min:3',
+            'cpf'           => 'required|max:11',
+            'email'         => 'required|email',
+            //'password'      =>'required|same:confirm-password',
+        ], $message);
+
+
+        $user = User::find($id);
+        $user->name         = $request->name;
+        $user->cpf          = $request->cpf;
+        $user->telefone     = $request->telefone;
+        $user->perfil       = $request->perfil;
+        $user->email        = $request->email;
+        if(!empty(trim($request->password))){
+            $user->password     = Hash::make($request->password);
+        }
+        $user->save();
+
+        return redirect()->route('user.index')->with('message', "user {$user->nome} editado com sucesso!");
     }
 
     /**
@@ -124,7 +162,7 @@ class UserController extends Controller
         $user = User::find($id);
         $user->delete();
 
-        return redirect()->route('user.index_cliente')->with('message', 'usuário excluido com sucesso!');
+        return redirect()->route('user.index')->with('message', 'usuário excluido com sucesso!');
     }
 
 
@@ -175,6 +213,7 @@ class UserController extends Controller
 
         Auth::loginUsingId($user->id);
 
+        //@todo - precisa redirecionar para uma pagina do cliente
         return redirect()->route('user.index')->with('message', "Caro(a) {$user->nome} sua conta foi criada com sucesso!");
     }
 

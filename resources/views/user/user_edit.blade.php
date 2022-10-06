@@ -35,21 +35,20 @@
             {{ Form::text('email', $user->email , ['class' => 'form-control'] ) }}
         </div>
         <div class="col-6">
-            {{ Form::label('perfil', 'Perfil:' , ['class' => 'form-select ']) }} 
-            {{ Form::select('perfil', ['1' => 'Administrador', '2' => 'Ajudante'],$user->perfil, array('class' => 'form-control ')) }} 
+            {{ Form::label('telefone', 'Telefone:') }}
+            {{ Form::text('telefone', $user->telefone, ['class' => 'form-control'] )}}
         </div>
         <div class="col-6">
             {{ Form::label('password', 'Senha:') }}
             {{ Form::password('password', ['class' => 'form-control']) }}
-
-            {{-- {{ Form::password('password', array('placeholder'=>'Password', 'class'=>'form-control' ) ) }} --}}
-
         </div>
         <div class="col-6">
-            {{ Form::label('password', 'confirmar senha') }}
+            {{ Form::label('password', 'Confirmar senha:') }}
             {{ Form::password('confirm-password',  array('class' => 'form-control ')) }}
-
-            
+        </div>
+        <div class="col-6">
+            {{ Form::label('perfil', 'Perfil:' , ['class' => 'form-select ']) }} 
+            {{ Form::select('perfil', ['1' => 'Administrador', '2' => 'Ajudante'],$user->perfil, array('class' => 'form-control ')) }} 
         </div>
 
     </div>
