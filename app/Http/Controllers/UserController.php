@@ -217,4 +217,38 @@ class UserController extends Controller
         return redirect()->route('user.index')->with('message', "Caro(a) {$user->nome} sua conta foi criada com sucesso!");
     }
 
+    public function self_edit_password()
+    {
+        $user_id = Auth::id();
+        $user = User::findOrFail($user_id);
+        return view('user.user_self_edit_password',compact('user'));
+    }
+    
+    public function self_update_password(Request $request)
+    {
+
+       $user_id = Auth::id();
+
+       $messages = [
+            'password_old.required'         => 'O campo senha antiga é obrigatório!',
+            'password_new.required'         => 'O campo senha nova é obrigatório e deve ter no mínimo 6 (seis) caracteres!',
+        ];
+        
+        $validatedData = $request->validate([
+            'password_old'      => 'required',
+            'password_new'      => 'required|min:6',
+        ], $messages);
+
+        $users = User::findOrFail($user_id);
+        
+        if(Hash::check($request->password_old, $users->password)){
+            $users->password = Hash::make($request->password_new);
+            $users->save();
+            return redirect()->route('self_edit_password')->with('message', 'Senha alterada com sucesso!');
+        }else{
+            return redirect()->route('self_edit_password')->with('message', 'A senha antiga não confere!');
+        }
+        
+    }
+
 }

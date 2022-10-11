@@ -101,3 +101,6 @@ Route::get('/user/perfil_cliente', [UserController::class, 'perfil'])->middlewar
 
 
 Route::delete('/user/{id}', [UserController::class, 'destroy'])->middleware(['auth'])->name('user.destroy');
+
+Route::get('self_edit_password', [UserController::class, 'self_edit_password'])->name('self_edit_password')->middleware('auth');
+Route::put('self_update_password', [UserController::class, 'self_update_password'])->name('self_update_password')->middleware('auth');
