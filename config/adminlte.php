@@ -283,8 +283,8 @@ return [
             'text' => 'search',
         ],
         [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
+            'text' => 'Usuários',
+            'url'  => 'user',
             'can'  => 'manage-blog',
         ],
         [
@@ -296,8 +296,18 @@ return [
         ],
         ['header' => 'account_settings'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
+            'text' => 'Usuários',
+            'url'  => 'user',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Categorias',
+            'url'  => 'categoria',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Produtos',
+            'url'  => 'produto',
             'icon' => 'fas fa-fw fa-user',
         ],
         [

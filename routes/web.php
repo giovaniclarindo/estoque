@@ -42,9 +42,9 @@ Route::delete('/produto/{id}', [ProdutoController::class, 'destroy'])->name('pro
 
 
 //exibe um produto
-Route::get('/produto/{id}', [ProdutoController::class, 'show']);
+Route::get('/produto/{id}', [ProdutoController::class, 'show'])->name('produto.show');;
 
-Route::get('/produtoupdate', [ProdutoController::class, 'store']);
+//Route::get('/produtoupdate', [ProdutoController::class, 'store']);
 
 Auth::routes();
 
@@ -72,6 +72,8 @@ Route::put('/categoria/{id}', [CategoriaController::class, 'update'])->name('cat
 
 //delete
 Route::delete('/categoria/{id}', [CategoriaController::class, 'destroy'])->name('categoria.delete');
+
+Route::get('/categoria/{id}', [CategoriaController::class, 'show'])->name('categoria.show');;
 
 
 
