@@ -37,7 +37,7 @@
                 </div>
                 <div class="col-6">
                     {{ Form::label('telefone', 'Telefone:') }}
-                    {{ Form::text('telefone', null , ['class' => 'form-control', 'placeholder' => 'Ex: (21) 9999-9999'] )}}
+                    {{ Form::text('telefone', null , ['class' => 'form-control', 'placeholder' => 'Ex: (21) 99999-9999'] )}}
                 </div>
                 <div class="col-6">
                     {{ Form::label('password', 'Senha:') }}

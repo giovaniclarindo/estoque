@@ -190,7 +190,8 @@ class UserController extends Controller
             'cpf.required' => 'O campo CPF é obrigatório!',
             'email.required' => 'O campo email é obrigatório!',
             'email.email' => 'Este e-mail não é valido!',
-            'password.required' => 'O campo nome é obrigatório!',
+            'telefone.required' => 'O campo telefone é obrigatório!',
+            'password.required' => 'O campo senha é obrigatório!',
             'password.same' => 'As senham precisam ser identicas!',
 
         ];
@@ -199,6 +200,7 @@ class UserController extends Controller
             'name'          => 'required|min:3',
             'cpf'           => 'required|max:11',
             'email'         => 'required|email',
+            'telefone'         => 'required|min:11',
             'password'      =>'required|same:confirm-password',
         ], $message);
 
@@ -208,6 +210,7 @@ class UserController extends Controller
         $user->perfil       = 'cliente';
         $user->cpf          = $request->cpf;
         $user->email        = $request->email;
+        $user->telefone        = $request->telefone;
         $user->password     = Hash::make($request->password);
         $user->save();
 
