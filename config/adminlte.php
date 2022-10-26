@@ -315,6 +315,11 @@ return [
             'url'  => 'self_edit_password',
             'icon' => 'lock',
         ],
+        [
+            'text' => 'Pedidos',
+            'url'  => 'pedido',
+            'icon' => 'fas fa-fw fa-user',
+        ],
     ],
 
     /*
