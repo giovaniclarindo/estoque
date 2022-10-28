@@ -20,11 +20,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #533375;
+    background-color: #0a452e;
 }
 
 .header a {
-    color: #ffd000;
+    color: #682305;
     text-decoration: none;
     font-family: sans-serif;
 }
@@ -98,7 +98,7 @@ body {
     border-radius: 2px;
     text-align: left;
     padding: 5px 5px;
-    color: #533375;
+    color: #053623;
     max-width: 340px;
     background-color: #FFD000;
 }

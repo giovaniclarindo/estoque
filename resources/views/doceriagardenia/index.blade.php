@@ -118,7 +118,7 @@
         <h3>Seja Bem-Vindo</h3>
         <p>A Doceria Gardênia é uma micro-empresa que foi criada em outubro de 
           2019 com a participação importante de seus amigos e 
-          parentes ao incentivar a produção e início de um <b style="color: #533375; font-weight: bold;">próprio negócio.</b></p>
+          parentes ao incentivar a produção e início de um <b style="color: #0a3d24; font-weight: bold;">próprio negócio.</b></p>
         <button type="button"> <a href="{{URL::to ('/quemsomos')}}">conhecer</a></button>
       </div>
     </article>

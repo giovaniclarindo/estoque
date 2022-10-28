@@ -62,9 +62,9 @@
         border-radius: 2px;
         text-align: left;
         padding: 5px 5px;
-        color: #533375;
+        color: #08502d;
         max-width: 340px;
-        background-color: #FFD000;
+        background-color: #074b07;
         margin: 0 auto;
     }
 
@@ -135,7 +135,7 @@
         max-width: 100%;
         height: 100px;
         display: flex;
-        background-color: #ffd000;
+        background-color: #0a4d16;
       }
       .container-inf-produto .lado-E .card-body2 img {
         width: 45%;

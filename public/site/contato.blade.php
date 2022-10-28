@@ -30,16 +30,7 @@
             <span id="hamburger" class="hamburguer"></span>
             <script src="script.js"></script>
           </button>
-          <ul id="menu" class="menu" role="menu">
-            <li><a href="index.html">inicio</a></li>
-            <li><a href="quemSomos.html">quem somos</a></li>
-            <li><a href="produtos.html">produtos</a></li>
-            <li><a href="promocao.html">promoção</a></li>
-            <li><a href="contato.html">contato</a></li>
-            <li>
-              <a href="carrinho.html"><img src="src/img/icon-carrinho.png" alt="" srcset="" /></a>
-            </li>
-          </ul>
+          
         </nav>
       </header>
     <br>
