@@ -20,12 +20,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #159d40;
+    background-color: #117e37;
     color: #030804;
 }
 
 .header a {
-    color: #084f14;
+    color: #ffffff;
     text-decoration: none;
     font-family: sans-serif;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 .header ul li a:hover {
-    color: #0a4a21;
+    color: #ffffff;
     font-weight: bold;
     letter-spacing: 1.5px;
     transition: 0.2s;
@@ -108,7 +108,7 @@ body {
 .frist-cont .container .conteudo1 h2 {
     font-size: 35px;
     font-weight: bold;
-    color: #0a4e3a;
+    color: #FF9900;
 }
 
 .frist-cont .container .conteudo1 hr {
@@ -131,8 +131,8 @@ body {
 
 .frist-cont .container .conteudo2 form button {
     font-size: 18px;
-    color: #c4610f;
-    background-color: #088225;
+    color: #FF9900;
+    background-color: #117e37;
     text-transform: lowercase;
     font-weight: bold;
     margin: 10px 0px;
@@ -142,11 +142,11 @@ body {
 }
 .frist-cont .container .conteudo2 form button:hover {
     transition: 0.3s;
-    color: #cd2406;
-    background-color: #c8ac0f;
+    color: #117e37;
+    background-color: #FF9900;
 }
 
-/* Começo do PRIMEIRO-CONTAINER */
+/* final do PRIMEIRO-CONTAINER */
 
 
 /* Começo do TERCEIRO-CONTAINER */
@@ -168,13 +168,13 @@ body {
     font-size: 48px;
     text-align: center;
     margin: 5px 0px;
-    color: #FFD000;
+    color: #FF9900;
     text-transform: uppercase;
 }
 
 .third-cont .third-contp2 a {
     /* background-color: blueviolet; */
-    color: black;
+    color: #FF9900;
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
@@ -200,7 +200,7 @@ body {
     max-width: 250px;
     height: 305px;
     display: block;
-    background-color: #054511;
+    background-color: #117e37;
     padding: 0;
     margin: 0 auto;
     border: none;
@@ -346,7 +346,7 @@ body {
     padding: 8px 40px;
     font-size: 16px;
     border-radius: 20px 20px 20px 20px;
-    background-color: #755533;
+    background-color: #0d6133;
 }
 
 .fourth-cont .container button a {
@@ -373,7 +373,7 @@ body {
 
 .slides {
     padding: 10px 0;
-    background-color: #755B90;
+    background-color: #0d6133;
     width: 100%;
 }
 
@@ -471,9 +471,9 @@ body {
 /* Começo do FOOTER */
 
 footer {
-    background-color: #FFD000;
+    background-color: #FF9900;
     width: 100%;
-    color: #073b19;
+    color: #0d6133;
     padding: 20px 0px;
 }
 
@@ -527,7 +527,7 @@ footer .container div ol li {
 }
 
 footer .container div ol li a {
-    color: #533375;
+    color: #0d6133;
     text-decoration: none;
     margin-bottom: 16px;
     /* background-color: aqua */
@@ -538,7 +538,7 @@ footer .container div ol li a {
 
 .copy {
     width: 100%;
-    background-color: #533375;
+    background-color: #0d6133;
     padding: 10px 0;
 }
 
@@ -739,7 +739,7 @@ footer .container div ol li a {
 }
 
 .QS-containerGeral ul li article {
-    background-color: #533375;
+    background-color: #0d6133;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -748,7 +748,7 @@ footer .container div ol li a {
 }
 
 .QS-containerGeral ul li article .infromacoes {
-    background-color: #ffd000;
+    background-color: #FF9900;
     max-width: 600px;
     text-align: center;
     padding: 5px;
@@ -815,8 +815,8 @@ footer .container div ol li a {
 
 .CTT-contGeral .CTT-contForm form {
     width: 100%;
-    background-color: #ffd000;
-    color: #4a2d69;
+    background-color: #0d6133;
+    color: #FF9900;
     display: inline-block;
     font-weight: bold;
     border-radius: 7px;
@@ -859,7 +859,7 @@ footer .container div ol li a {
     width: 160px;
     padding: 10px 5px;
     border-radius: 2px;
-    background-color: #4a2d69;
+    background-color: #FF9900;
     margin-left: 140px;
     color: #fff;
 }
@@ -908,8 +908,8 @@ footer .container div ol li a {
     }
     .CTT-contGeral .CTT-contForm form {
         max-width: 460px;
-        background-color: #ffd000;
-        color: #4a2d69;
+        background-color: #0d6133;
+        color: #FF9900;
         display: inline-block;
         font-weight: bold;
         border-radius: 7px;
