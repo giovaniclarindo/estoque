@@ -181,7 +181,7 @@ body {
 }
 
 .third-cont .third-contp2 a:hover {
-    color: #FFD000;
+    color: #FF9900;
     transition: 0.3s;
 }
 
@@ -226,6 +226,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     width: 220px;
+    color: #FF9900;
 }
 
 .third-cont .third-contp2 .container .card-body .card-inf p {
@@ -612,7 +613,7 @@ footer .container div ol li a {
     max-width: 440px;
     height: 162px;
     display: flex;
-    background-color: #ffd000;
+    background-color: #ffd000;  
 }
 
 .container-inf-produto .lado-E .card-body2 img {
@@ -764,12 +765,12 @@ footer .container div ol li a {
     }
     .QS-containerGeral ul li article {
         padding: 5px;
-        background-color: #533375;
+        background-color: #0d6133;
         display: flex;
         max-width: 90%;
     }
     .QS-containerGeral ul li article .infromacoes {
-        background-color: #ffd000;
+        background-color: #FF9900;
         text-align: center;
         margin: 0 auto;
     }
@@ -785,13 +786,13 @@ footer .container div ol li a {
     }
     .QS-containerGeral ul li article {
         padding: 5px;
-        background-color: #533375;
+        background-color: #0d6133;
         display: block;
         max-width: 90%;
         margin: 0 auto;
     }
     .QS-containerGeral ul li article .infromacoes {
-        background-color: #ffd000;
+        background-color: #FF9900;
         text-align: center;
     }
     .QS-containerConteudo img {

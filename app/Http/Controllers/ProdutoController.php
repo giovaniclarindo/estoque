@@ -104,27 +104,21 @@ class ProdutoController extends Controller
         $message = [
             'nome.required' => 'O campo nome é obrigatório!',
             'nome.min' => 'O campo nome precisa ter no mínimo :min caracteres!',
-            'descricao.required' => 'O campo descrição é obrigatório!',
             'valor.required' => 'O campo valor é obrigatório!',
             'categoria_id.required' => 'O campo categoria é obrigatório!',
-            'promocao.required' => 'O campo promoção é requirido',
         ];
 
         $validateData = $request->validate([
             'nome'          => 'required|min:7',
-            'descricao'     => 'required',
             'valor'         => 'required',
             'categoria_id'  => 'required',
-            'promocao'      => 'required',
             
         ], $message);
 
         $produto = Produto::findOrFail($id);
         $produto->nome      =$request->nome;
-        $produto->descricao = $request->descricao;
         $produto->valor     = $request->valor;
         $produto->categoria_id = $request->categoria_id;
-        $produto->promocao = $request->promocao;
 
         $produto->save();
        
