@@ -48,13 +48,13 @@
 <!-- Começo do primeiro container -->
     <section class="frist-cont">
         <section class="container">
-            <div class="conteudo1">
+            <!--<div class="conteudo1">
                 <h2>A vida é curta! <br> Coma a sobremosa primeiro</h2>
                 <hr/>
                 <p>Seja Bem-vindo ao site da Doceria Gardêmia. Aqui você 
                     encontrará diversos de nossos deliciosos produtos e um 
                     pouco mais sobre nós.</p>
-            </div>
+            </div>-->
             <div class="conteudo2">
                 <form action="">
                    <a href="#conhecer"><button type="button" >conhecer</button></a>
@@ -256,7 +256,7 @@
           <ol>
               <li><a href="">(21) 9999-9999</a></li>
               <li><a href="">(21) 9999-9999</a></li>
-              <li><a href="mailto:comercial@gmail.com">comercial@gmail.com</a></li>
+              <li><a href="mailto:chef.antoniaviana@gmail.com">chef.antoniaviana@gmail.com</a></li>
           </ol>
       </div>
     </section>

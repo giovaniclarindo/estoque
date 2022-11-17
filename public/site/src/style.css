@@ -83,8 +83,9 @@ body {
 /* Começo do PRIMEIRO-CONTAINER */
 
 .frist-cont {
+    height: 600px;
     padding: 10px 0px;
-    background-image: url("./img/capa.png");
+    background-image: url("./img/marmita.png");
     background-repeat: no-repeat;
     background-size: cover;
    
@@ -127,6 +128,7 @@ body {
 
 .frist-cont .container .conteudo2 form {
     text-align: center;
+    margin-top: 450px;
 }
 
 .frist-cont .container .conteudo2 form button {

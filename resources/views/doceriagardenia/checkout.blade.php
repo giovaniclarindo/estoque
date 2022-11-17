@@ -25,7 +25,7 @@
 <div class="row">
 
   <div class="col-12 col-md-6 ">
-    <div class="card" style="background-color:#ffd000" >
+    <div class="card" style="background-color:#FF9900" >
       <div class="card-body">
         {{ Form::open(array('url' => '/concluirPedido')) }}
       

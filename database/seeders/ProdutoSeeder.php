@@ -19,6 +19,7 @@ class ProdutoSeeder extends Seeder
             'nome'         => 'frango',
             'quantidade'   => 15,
             'valor'        => 22,
+            'descricao'    => 'Descricao 1',
             'categoria_id' => 1
 
         ]);
@@ -27,6 +28,7 @@ class ProdutoSeeder extends Seeder
             'nome'         => 'Melancia',
             'quantidade'   => 5,
             'valor'        => 15,
+            'descricao'    => 'Descricao 2',
             'categoria_id' => 2
         ]);
 
@@ -34,6 +36,7 @@ class ProdutoSeeder extends Seeder
             'nome'         => 'Abobrinha',
             'quantidade'   => 10,
             'valor'        => 7,
+            'descricao'    => 'Descricao 3',
             'categoria_id' => 3
         ]);
     }

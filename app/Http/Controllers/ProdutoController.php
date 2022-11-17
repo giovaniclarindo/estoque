@@ -59,6 +59,7 @@ class ProdutoController extends Controller
         $produto->descricao = $request->descricao;
         $produto->valor = $request->valor;
         $produto->categoria_id = $request->categoria_id;
+        $produto->quantidade = 0;
         $produto->promocao = $request->promocao;
         
         $produto->save();
@@ -105,19 +106,21 @@ class ProdutoController extends Controller
             'nome.required' => 'O campo nome é obrigatório!',
             'nome.min' => 'O campo nome precisa ter no mínimo :min caracteres!',
             'valor.required' => 'O campo valor é obrigatório!',
+            'descricao.required' => 'O campo descrição é obrigatório!',
             'categoria_id.required' => 'O campo categoria é obrigatório!',
         ];
 
         $validateData = $request->validate([
             'nome'          => 'required|min:7',
             'valor'         => 'required',
+            'descricao'     => 'required',
             'categoria_id'  => 'required',
-            
         ], $message);
 
         $produto = Produto::findOrFail($id);
         $produto->nome      =$request->nome;
         $produto->valor     = $request->valor;
+        $produto->descricao = $request->descricao;
         $produto->categoria_id = $request->categoria_id;
 
         $produto->save();

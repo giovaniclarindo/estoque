@@ -21,8 +21,8 @@
 </head>
 <body>
      <header id="header" class="header">
-      <a id="logo" class="logo" href="{{URL::to ('produto/create')}}">
-        <img id="logo" class="logo" src="{{ asset('/site/src/img/logo-gardênia.png')}}" alt="" />
+      <a id="logo" class="logo" href="{{URL::to ('/')}}">
+        <img id="logo" class="logo" src="{{ asset('/site/src/img/logo-marmitas.png')}}" alt="" />
       </a>
       <nav id="nav" class="nav">
         <button
@@ -39,7 +39,7 @@
          <li><a href="{{URL::to ('/')}}">inicio</a></li>
           <li><a href="{{URL::to ('/quemsomos')}}">quem somos</a></li>
           <li><a href="{{URL::to ('/produtos')}}">produtos</a></li> 
-         <li><a href="{{URL::to ('/promocoes')}}">promoção</a></li> 
+         <!-- <li><a href="{{-- URL::to ('/promocoes') --}}">promoção</a></li> -->
          <li><a href="{{URL::to ('/contato')}}">contato</a></li> 
           <li>
             <a href="{{URL::to ('/carrinho')}}"><img src="{{ asset('/site/src/img/icon-carrinho.png')}}" alt="" srcset="" /></a>
@@ -63,9 +63,8 @@
     <section class="container">
     <div>
         <h3>sobre</h3>
-        <p>A Doceria Gardênia é uma micro-empresa que foi criada em 
-            outubro de 2019 com a participação importante de seus amigos 
-            e parentes ao incentivar a produção e início de um próprio negócio. </p>
+        <p>A Marmitaria é uma empresa que tem o objetivo de deixar a sua alimentação  com saúde, cor e sabor. 
+        </p>
     </div>
     
     <div>
@@ -108,9 +107,9 @@
     <div>
       <h3>contatos</h3>
       <ol>
-          <li><a href="https://api.whatsapp.com/send?phone=5521982109100&text=Ol%C3%A1%2C%20Doceria%20Gardenia">(21) 98210-9100</a></li>
+          <li><a href="https://wa.me/5511945067050?text=Ol%C3%A1%2C+gostaria+de+tirar+uma+duvida%21">(11) 94506-7050</a></li>
          
-          <li><a href="mailto:doceria.gardeniaa@gmail.com">doceria.gardeniaa@gmail.com</a></li>
+          <li><a href="mailto:chef.antoniaviana@gmail.com">chef.antoniaviana@gmail.com</a></li>
       </ol>
   </div>
 </section>

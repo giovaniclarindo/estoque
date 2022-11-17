@@ -78,7 +78,7 @@
           <ol>
               <li><a href="">(21) 9999-9999</a></li>
               <li><a href="">(21) 9999-9999</a></li>
-              <li><a href="mailto:comercial@gmail.com">comercial@gmail.com</a></li>
+              <li><a href="mailto:chef.antoniaviana@gmail.com">chef.antoniaviana@gmail.com</a></li>
           </ol>
       </div>
     </section>
@@ -87,7 +87,7 @@
     <!-- Começo do copy -->
     <section class="copy">
         
-            <p><small>doceriagardenia - 2021 alguns direitos reservados</small></p>
+            <p><small>Marmitaria - 2021 alguns direitos reservados</small></p>
             <a href="./Doceria Gardenia ADM/sidebars/index.html">adm</a>
         
     </section>

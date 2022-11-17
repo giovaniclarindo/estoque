@@ -18,16 +18,13 @@
             <div class="infromacoes">
               <h2>Gardênia</h2>
               <p>
-                A Doceria Gardênia é uma micro-empresa que foi criada em outubro
-                de 2019 e seu nome oficial foi dado em fevereiro de 2020. Em seu
-                nascimento tiveram participação importante de seus amigos e
-                parentes, que passaram a incentivar na produção e início de um
-                próprio negócio. A partir de uma pesquisa em sua comunidade,
-                observou-se que seu produto tinha potencial para ganhar lugar no
-                mercado. Seu objetivo foi verificar a qualidade de seus produtos
-                primários (Donuts e Bolos) e após os positivos resultados, o
-                produto que obteve mais destaque foi o donuts. Tornando-se o
-                "Queridinho da casa".
+                Tudo começou a 3 anos atrás, quando Antônia foi indicada para fazer uma faxina em São Paulo. 
+                Após o término da faxina, ela resolveu cozinhar, pois sempre foi algo que teve prazer em fazer.
+                Ela pegou todos os ingredientes que tinham na geladeira e disso saiu um peito de frango ao molho com laranja e mostarda, um arroz com cenoura e salsinha e uma batata dourada. Logo após o término ela foi embora da casa, e a noite o telefone tocou, com o feedback de que a comida estava maravilhosa e que ela nunca tinha comido algo tão bom ou parecido.
+                A partir daquele momento, a pessoa a qual ela apenas foi faxinar, começou a indicar ela para as amigas da região, e desde então começou a receber vários convites para cozinhar.
+                Então, ela começou a cozinhar para as amigas da qual a indicou de inicio.
+                3 anos se passaram, e hoje Antonia Viana é chefe de uma academia inteira de prédio comercial e outras pessoas por fora.
+                Trabalha especialmente para o público fitness, a maioria dos clientes são personalizados com receitas e acompanhamento por nutricionistas.
               </p>
             </div>
             <img
