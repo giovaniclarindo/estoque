@@ -16,15 +16,17 @@
         <li class="QS-containerConteudo">
             <article>
             <div class="infromacoes">
-              <h2>Gardênia</h2>
+              <h2>Marmitaria</h2>
               <p>
-                Tudo começou a 3 anos atrás, quando Antônia foi indicada para fazer uma faxina em São Paulo. 
+                Tudo começou a 3 anos atrás, 
+                quando Antônia foi indicada para fazer uma faxina em São Paulo. 
                 Após o término da faxina, ela resolveu cozinhar, pois sempre foi algo que teve prazer em fazer.
-                Ela pegou todos os ingredientes que tinham na geladeira e disso saiu um peito de frango ao molho com laranja e mostarda, um arroz com cenoura e salsinha e uma batata dourada. Logo após o término ela foi embora da casa, e a noite o telefone tocou, com o feedback de que a comida estava maravilhosa e que ela nunca tinha comido algo tão bom ou parecido.
-                A partir daquele momento, a pessoa a qual ela apenas foi faxinar, começou a indicar ela para as amigas da região, e desde então começou a receber vários convites para cozinhar.
-                Então, ela começou a cozinhar para as amigas da qual a indicou de inicio.
-                3 anos se passaram, e hoje Antonia Viana é chefe de uma academia inteira de prédio comercial e outras pessoas por fora.
-                Trabalha especialmente para o público fitness, a maioria dos clientes são personalizados com receitas e acompanhamento por nutricionistas.
+                Ela pegou todos os ingredientes que tinham na geladeira e disso saiu um peito de frango ao molho com laranja e mostarda, 
+                um arroz com cenoura e salsinha e uma batata dourada.
+                3 anos se passaram, e atualmente Antonia Viana é chefe de uma academia inteira de prédio comercial 
+                e outros clientes por fora.
+                Trabalha especialmente para o público fitness, 
+                a maioria dos clientes tem suas refeições personalizadas com receitas com  prescrição do nutricionista.
               </p>
             </div>
             <img
@@ -44,9 +46,9 @@
           <div class="infromacoes">
             <h2>Missão</h2>
             <p>
-              Para entregar um produto nesses padrões, uso materiais de boa
-              qualidade, faço uma boa higiene no local de trabalho e sempre faço
-              pesquisa de preço p manter o custo-benefício dos clientes
+              Oferecer produtos e serviço na área gastronômica, valorizando o aspecto nutritivo, a qualidade, o sabor e a
+              correta técnica de elaboração de cada alimento, para contribuir para a saúde dos nossos clientes, ofertando um
+              sistema de atendimento diferenciado.
             </p>
           </div>
           </article>
@@ -58,10 +60,9 @@
           <div class="infromacoes">
             <h2>Visão</h2>
             <p>
-              Sucesso pra mim não é necessariamente ficar rica, vejo isso como a
-              consequência de um bom trabalho. Sucesso para mim é fazer algo e
-              ter pessoas satisfeitas com isso. Ter clientes satisfeitos não tem
-              preço, é ótimo receber bons feedbacks e ver um cliente fidelizar.
+              Ser uma empresa reconhecida como referência dentro da gastronomia braslileira buscando qualidade,
+              agilidade no atendimento e manter um bom relacionamento com os clientes, colaboradores e fornecedores.
+              Sempre valorizando essa troca de experiência na convivência entre o restaurante e nossos clientes.
             </p>
           </div>
           <img
@@ -81,9 +82,12 @@
           <div class="infromacoes">
             <h2>Valores</h2>
             <p>
-              Um produto artesanal de boa qualidade, com cuidado nos mínimos
-              detalhes, ou seja, o produto é bonito visualmente, gostoso e com
-              um ótimo custo-benefício para o cliente, sempre.
+              Nutrição, para promover a saúde e a boa qualidade de vida.
+              Comida saudável, para contribuir com a mudança do estilo de vida.
+              Sabores, para proporcionar o prazer de comer bem.
+              Variedade, para oferecer opções com qualidade para todos os gostos.
+              Atendimento com excelência, para apresentar soluções gastronômicas.
+              Serviço rápido e prático, para adequar ao estilo de vida de quem não tem tempo a perder.
             </p>
           </div>
           </article>
