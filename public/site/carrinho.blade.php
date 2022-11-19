@@ -130,7 +130,7 @@
     <!-- Começo do copy -->
     <section class="copy">
         
-            <p><small>doceriagardenia - 2021 alguns direitos reservados</small></p>
+            <p><small>marmitaria - 2021 alguns direitos reservados</small></p>
             <a href="./Doceria Gardenia ADM/sidebars/index.html">adm</a>
         
     </section>

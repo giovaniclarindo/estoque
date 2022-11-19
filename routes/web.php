@@ -20,22 +20,22 @@ use App\Http\Controllers\ComentarioController;
 |
 */
 
-Route::get('/', [SiteController::class, 'index'])->name('doceriagardenia.index');
-Route::get('/contato', [SiteController::class, 'contato'])->name('doceriagardenia.contato');
-Route::get('/produtos', [SiteController::class, 'produtos'])->name('doceriagardenia.produtos');
-Route::get('/promocoes', [SiteController::class, 'promocao'])->name('doceriagardenia.promocao');
-Route::get('/quemsomos', [SiteController::class, 'quemsomos'])->name('doceriagardenia.quemSomos');
+Route::get('/', [SiteController::class, 'index'])->name('marmitaria.index');
+Route::get('/contato', [SiteController::class, 'contato'])->name('marmitaria.contato');
+Route::get('/produtos', [SiteController::class, 'produtos'])->name('marmitaria.produtos');
+Route::get('/promocoes', [SiteController::class, 'promocao'])->name('marmitaria.promocao');
+Route::get('/quemsomos', [SiteController::class, 'quemsomos'])->name('marmitaria.quemSomos');
 
 
 // Rotas do Carrinho
-Route::get('/carrinho', [SiteController::class, 'carrinho'])->name('doceriagardenia.carrinho');
-Route::get('/checkout', [SiteController::class, 'checkout'])->name('doceriagardenia.checkout');
+Route::get('/carrinho', [SiteController::class, 'carrinho'])->name('marmitaria.carrinho');
+Route::get('/checkout', [SiteController::class, 'checkout'])->name('marmitaria.checkout');
 
-Route::get('/adicionarProduto/{id}', [SiteController::class, 'show'])->name('doceriagardenia.show');
-Route::post('/addProduto', [SiteController::class, 'addProduto'])->name('doceriagardenia.addProduto');
+Route::get('/adicionarProduto/{id}', [SiteController::class, 'show'])->name('marmitaria.show');
+Route::post('/addProduto', [SiteController::class, 'addProduto'])->name('marmitaria.addProduto');
 Route::delete('/removeProduto/{key}',[SiteController::class,'removeProduto'])->name('removeProduto');
 
-Route::post ('/concluirPedido', [SiteController::class, 'concluirPedido'])->name('doceriagardenia.concluirPedido');
+Route::post ('/concluirPedido', [SiteController::class, 'concluirPedido'])->name('marmitaria.concluirPedido');
 // ---------
 Route::get('/dashboard',  [PedidoController::class, 'dashboard'])->middleware(['auth'])->name('dashboard');
 

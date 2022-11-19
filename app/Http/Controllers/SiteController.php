@@ -24,7 +24,7 @@ class SiteController extends Controller
         $produtos = Produto::limit(3)->orderBy('nome', 'ASC')->get();
         $comentarios = Comentario::orderBy('nome', 'ASC')->get(); 
         $arquivos = Arquivo::get();
-        return view('doceriagardenia.index', ['produtos' => $produtos , 'comentarios' =>$comentarios, ]);
+        return view('marmitaria.index', ['produtos' => $produtos , 'comentarios' =>$comentarios, ]);
     }
 
     /**
@@ -34,7 +34,7 @@ class SiteController extends Controller
      */
     public function contato()
     {
-        return view('doceriagardenia.contato');
+        return view('marmitaria.contato');
     }
 
      /**
@@ -97,7 +97,7 @@ class SiteController extends Controller
     public function carrinho(Request $request){
 
         $cart = (array) $request->session()->get('cart');
-        return view('doceriagardenia.carrinho', ['cart' => $cart]);
+        return view('marmitaria.carrinho', ['cart' => $cart]);
         /*
         foreach ($cart as $key => $value) {
             //echo($value[$key]['nome']);
@@ -122,7 +122,7 @@ class SiteController extends Controller
     {
         
         $cart = (array) $request->session()->get('cart');
-        return view('doceriagardenia.checkout', ['cart' => $cart]);
+        return view('marmitaria.checkout', ['cart' => $cart]);
         
     }
 
@@ -189,7 +189,7 @@ class SiteController extends Controller
             }
         }
         $request->session()->forget('cart');
-        return redirect()->route('doceriagardenia.index')->with('message', "Seu pedido foi recebido e em breve entraremos em contato para confirmar a forma de pagamento ");
+        return redirect()->route('marmitaria.index')->with('message', "Seu pedido foi recebido e em breve entraremos em contato para confirmar a forma de pagamento ");
 
 
     }
@@ -209,7 +209,7 @@ class SiteController extends Controller
     public function show($id)
     {
         $produto = Produto::findOrFail($id);
-        return view('doceriagardenia.show', ['produto' => $produto]);
+        return view('marmitaria.show', ['produto' => $produto]);
     }
 
     /**
@@ -235,7 +235,7 @@ class SiteController extends Controller
      */
     public function quemsomos()
     {
-        return view('doceriagardenia.quemsomos');
+        return view('marmitaria.quemsomos');
     }
 
      /**
@@ -247,7 +247,7 @@ class SiteController extends Controller
     {
         $produtos = Produto::orderBy('nome', 'ASC')->get();
         $arquivos = Arquivo::get();
-        return view('doceriagardenia.produtos', ['produtos' => $produtos  ]);
+        return view('marmitaria.produtos', ['produtos' => $produtos  ]);
     }
 
      /**
@@ -260,7 +260,7 @@ class SiteController extends Controller
         
         $produtos = Produto::where('promocao',1)->get();
         $arquivos = Arquivo::get();
-        return view('doceriagardenia.promocao', ['produtos' => $produtos]);
+        return view('marmitaria.promocao', ['produtos' => $produtos]);
     }
 
 

@@ -16,27 +16,35 @@ class ProdutoSeeder extends Seeder
     public function run()
     {
         Produto::create([
-            'nome'         => 'frango',
-            'quantidade'   => 15,
-            'valor'        => 22,
-            'descricao'    => 'Descricao 1',
+            'nome'         => 'Frango Grelhado',
+            'quantidade'   => 14,
+            'valor'        => 14,
+            'descricao'    => 'com purê de batata doce , creme de espinafre e brócolis.',
             'categoria_id' => 1
 
         ]);
 
         Produto::create([
-            'nome'         => 'Melancia',
-            'quantidade'   => 5,
-            'valor'        => 15,
-            'descricao'    => 'Descricao 2',
+            'nome'         => 'Panqueca Integral',
+            'quantidade'   => 14,
+            'valor'        => 14,
+            'descricao'    => 'Panquecas integral de carne com mix de legumes.',
             'categoria_id' => 2
         ]);
 
         Produto::create([
-            'nome'         => 'Abobrinha',
-            'quantidade'   => 10,
-            'valor'        => 7,
-            'descricao'    => 'Descricao 3',
+            'nome'         => 'Coxa e Sobrecoxa',
+            'quantidade'   => 14,
+            'valor'        => 14,
+            'descricao'    => 'Coxa e sobrecoxa com arroz e feijão e legumes.',
+            'categoria_id' => 3,
+        ]);
+
+        Produto::create([
+            'nome'         => 'Strogonoff de Carne',
+            'quantidade'   => 14,
+            'valor'        => 14,
+            'descricao'    => 'Strogonoff de carne, arroz integral , brócolis e abobrinhas.',
             'categoria_id' => 3
         ]);
     }

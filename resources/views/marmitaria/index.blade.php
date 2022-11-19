@@ -166,17 +166,17 @@
   </div>
   @endforeach
   
-<div class="botoes">
+<!--<div class="botoes">
 <button class="w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 <button class="w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
+</div> -->
 
 </section>
 
   @section('scriptSlide')
   <script>  
    /*Slideshow dos comentários*/
-   var slideIndex = 1;
+  /* var slideIndex = 1;
       showDivs(slideIndex);
       
       function plusDivs(n) {
@@ -192,10 +192,10 @@
           x[i].style.display = "none";  
         }
         x[slideIndex-1].style.display = "block";  
-      }
+      }*/
 
     /*Botão contador dentro dos cards*/
-    let addBtn = document.querySelector('#add');
+    /*let addBtn = document.querySelector('#add');
                   let subBtn = document.querySelector('#sub');
                   let qty = document.querySelector('#qtyBox');
             
@@ -210,7 +210,7 @@
                     else{
                       qty.value = parseInt(qty.value) -1;
                     }
-                  });
+                  });*/
                   
   </script>
  @endsection
@@ -222,7 +222,7 @@
 
 <script>
 
-$(function()
+/*$(function()
       {
        $('form[class="addProduto"]').submit(function(event)
        {
@@ -233,7 +233,7 @@ $(function()
 
       $.ajax({
         type: "post",
-        url: "{{ route('doceriagardenia.addProduto') }}",
+        url: "{{ route('marmitaria.addProduto') }}",
         data: $(this).serialize(),
         dataType: "json",
         success: function (response) {
@@ -250,7 +250,7 @@ $(function()
 
 
 
-      });
+      });*/
 </script>
 
 

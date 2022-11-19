@@ -71,7 +71,7 @@
 
       $.ajax({
         type: "post",
-        url: "{{ route('doceriagardenia.addProduto') }}",
+        url: "{{ route('marmitaria.addProduto') }}",
         data: $(this).serialize(),
         dataType: "json",
         success: function (response) {

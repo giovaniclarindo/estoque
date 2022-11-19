@@ -161,7 +161,7 @@ body {
 
 .third-cont .third-contp2 {
     max-width: 90%;
-    background-color: #074b2c;
+    background-color: #117e37;
     margin: 0 auto;
     text-align: center;
 }
@@ -200,19 +200,20 @@ body {
 .third-cont .third-contp2 .container .card-body {
     font-family: sans-serif;
     max-width: 250px;
-    height: 305px;
+    height: 350px;
     display: block;
-    background-color: #117e37;
+    background-color: #ffffff;
+    color: #000000;
     padding: 0;
     margin: 0 auto;
-    border: none;
+    border-radius: 20px;
     margin: 10px;
 }
 
 .third-cont .third-contp2 .container .card-body  .fotoProduto {
     width:100%;
     height: 200px;
-    
+    border-radius: 20px 20px 0 0;
 }
 
 .third-cont .third-contp2 .container .card-body .card-inf {
@@ -225,7 +226,7 @@ body {
 }
 
 .third-cont .third-contp2 .container .card-body .card-inf h5 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     width: 220px;
     color: #FF9900;
@@ -241,7 +242,7 @@ body {
 .third-cont .third-contp2 .container .card-body .card-footer {
     border: none;
     background: none;
-    margin: 0 auto;
+    margin: 10px auto;
     width: 220px;
     align-content: center;
     display: flex;
