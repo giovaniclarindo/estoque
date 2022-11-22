@@ -7,7 +7,7 @@
 @section('content')
     <!-- Começo do header -->
     <section class="intro-quemsomos">
-       <img src="{{ asset('/site/src/img/1.png')}}" class="d-block w-100" alt="banner de promoção">
+       <img src="{{ asset('/site/src/img/marmita.png')}}" class="d-block w-100" alt="banner de promoção">
     </section>
   
 

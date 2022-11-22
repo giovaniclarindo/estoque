@@ -39,13 +39,13 @@
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="{{ asset('/site/src/img/1.png')}}" class="d-block w-100" alt="banner de promoção">
+          <img src="{{ asset('/site/src/img/marmitasCarrossel.jpg')}}" class="d-block w-100" alt="banner de promoção">
         </div>
         <div class="carousel-item">
-          <img src="{{ asset('/site/src/img/2.png')}}" class="d-block w-100" alt="Banner com produto">
+          <img src="{{ asset('/site/src/img/marmitasCarrossel1.jpg')}}" class="d-block w-100" alt="Banner com produto">
         </div>
         <div class="carousel-item">
-          <img src="{{ asset('/site/src/img/3.png')}}" class="d-block w-100" alt="Banner com produto">
+          <img src="{{ asset('/site/src/img/marmitasCarrossel2.jpg')}}" class="d-block w-100" alt="Banner com produto">
         </div>
       </div>
       <button id="conhecer" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
