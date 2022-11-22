@@ -30,7 +30,7 @@
               </p>
             </div>
             <img
-                src="{{ asset('/site/src/img/quemSomos-donut1.jpg')}}"
+                src="{{ asset('/site/src/img/logo-marmitas.png')}}"
                 alt=""
               />
           </article>
@@ -40,7 +40,7 @@
         <li class="QS-containerConteudo">
             <article>
             <img
-                src="{{ asset('/site/src/img/quemSomos-donut2.jpg')}}"
+                src="{{ asset('/site/src/img/missao.png')}}"
                 alt=""
               />
           <div class="infromacoes">
@@ -66,7 +66,7 @@
             </p>
           </div>
           <img
-                src="{{ asset('/site/src/img/quemSomos-donut3.jpg')}}"
+                src="{{ asset('/site/src/img/visao.png')}}"
                 alt=""
               />
           </article>
@@ -76,7 +76,7 @@
         <li class="QS-containerConteudo">
             <article>
             <img
-                src="{{ asset('/site/src/img/quemSomos-donut4.jpg')}}"
+                src="{{ asset('/site/src/img/valores.png')}}"
                 alt=""
               />
           <div class="infromacoes">
