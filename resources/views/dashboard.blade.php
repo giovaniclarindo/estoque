@@ -129,7 +129,7 @@
             <table class="table table-striped table-valign-middle">
               <thead>
               <tr>
-                <th>Poduto</th>
+                <th>Produto</th>
                 <th>Preço</th>
                 <th>Vendas</th>
                 

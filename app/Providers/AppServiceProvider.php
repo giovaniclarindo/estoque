@@ -47,7 +47,7 @@ class AppServiceProvider extends ServiceProvider
                     'label_color' => 'success',
                 ],
                 [
-                    'text'       => 'concluidos',
+                    'text'       => 'Concluidos',
                     'icon_color' => 'green',
                     'url'        => 'pedido/concluidos',
                     'label'       => Pedido::whereRaw('DATE(updated_at) = CURDATE()')->where('status', 3)->count(),
