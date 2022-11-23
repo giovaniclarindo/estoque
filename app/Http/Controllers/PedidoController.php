@@ -127,14 +127,11 @@ class PedidoController extends Controller
         $pedido->status = 2;
         $pedido->save();
 
-        //$destinatario = $pedido->email;
-      
-        $pedidos = Pedido::where('status',2)->orderBy('created_at', 'desc')->get();
-
         //Envio de email
         Mail::to($pedido->email)->send(new AvisoPedido($pedido));
-
-        return view('pedido.andamento', ['pedido' => $pedidos]);
+      
+        $pedido = Pedido::where('status',2)->orderBy('created_at', 'desc')->get();
+        return view('pedido.andamento', ['pedido' => $pedido]);
     }
 
 
@@ -143,6 +140,9 @@ class PedidoController extends Controller
         $pedido = Pedido::find($id);
         $pedido->status = 3;
         $pedido->save();
+
+        //Envio de email
+        Mail::to($pedido->email)->send(new AvisoPedido($pedido));
 
         $date = Carbon::today()->format('Y-m-d');
         $pedido = Pedido::whereRaw('DATE(updated_at) = CURDATE()')->where('status', 3)->get();
@@ -154,7 +154,10 @@ class PedidoController extends Controller
         $pedido = Pedido::find($id);
         $pedido->status = 4;
         $pedido->save();
-       
+
+        //Envio de email
+        Mail::to($pedido->email)->send(new AvisoPedido($pedido));
+        
         $numeroDePedidos =Pedido::where('status',1)->count();
         $pedido = Pedido::where('status',1)->get();
         return view('pedido.index', ['pedido' => $pedido ,'numeroDePedidos' => $numeroDePedidos ]);
