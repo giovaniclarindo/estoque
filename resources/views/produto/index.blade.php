@@ -25,7 +25,7 @@
               </svg>
         </a>
 
-        <table class="table  no-margin">
+        <table class="table no-margin">
             <thead>
                 <tr>
                     <td>Id</td>

@@ -220,7 +220,7 @@
 
 <script>
 
-/*$(function()
+$(function()
       {
        $('form[class="addProduto"]').submit(function(event)
        {
@@ -248,7 +248,7 @@
 
 
 
-      });*/
+      });
 </script>
 
 

@@ -1,6 +1,6 @@
 @extends('components.layout')
 
-@section('title','Doceria Gardenia - Adicionar {{$produto->nome}} Ao Carrinho')
+@section('title','Marmitaria - Adicionar {{$produto->nome}} Ao Carrinho')
 
 @section('content')
 
