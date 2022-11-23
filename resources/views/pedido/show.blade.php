@@ -24,6 +24,7 @@
         <p class="bg-dark">Data do pedido        : {{ Carbon\Carbon::parse($pedido->created_at)->format('d/m  H:i' ) }}</p> 
         <p>Nome                                  : {{$pedido->nome}}</p> 
         <p>Telefone                              : {{$pedido->telefone}}</p>
+        <p>email                                 : {{$pedido->email}}</p>
         <p>Observacao                            : {{$pedido->observacao}}</p> 
         <p>Rua                                   : {{$pedido->rua}}</p>
         <p>status                                : {{$pedido->status}}</p>

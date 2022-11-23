@@ -19,6 +19,7 @@ class PedidoSeeder extends Seeder
             
             'nome'                    => 'lucas' ,
             'telefone'                => '21969934621',
+            'email'                   => 'giovani.giovani@gmail.com',
             'observacao'              => 'sem mostard',
             'status'                  => '1',
             'rua'                     => 'rua de baixo',
@@ -32,6 +33,7 @@ class PedidoSeeder extends Seeder
             
             'nome'                    => 'João' ,
             'telefone'                => '21996699669',
+            'email'                   => 'giovani2.giovani@gmail.com',
             'observacao'              => 'com mostard',
             'status'                  => '2',
             'rua'                     => 'rua de cima',
@@ -44,6 +46,7 @@ class PedidoSeeder extends Seeder
             
             'nome'                    => 'Matheus' ,
             'telefone'                => '21998654528',
+            'email'                   => 'giovani3.giovani@gmail.com',
             'observacao'              => 'com pouca pimentas',
             'status'                  => '3',
             'rua'                     => 'Rua da Alfândega',
@@ -57,6 +60,7 @@ class PedidoSeeder extends Seeder
             
             'nome'                    => 'Gabriel' ,
             'telefone'                => '21996587415',
+            'email'                   => 'giovani4.giovani@gmail.com',
             'observacao'              => 'Sem observação',
             'status'                  => '4',
             'rua'                     => 'Rua da Assembleia.',

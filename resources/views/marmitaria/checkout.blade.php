@@ -58,6 +58,10 @@
               {{ Form::label('telefone', 'Telefone:') }}
               {{ Form::text('telefone', null , ['class' => 'form-control', 'id'=> 'telefone' , 'placeholder' => 'Ex: (21)97634-0934'] ) }}
            </div>
+           <div class="form-group">
+            {{ Form::label('email', 'E-mail:') }}
+            {{ Form::text('email', null , ['class' => 'form-control', 'id'=> 'email' , 'placeholder' => 'Ex: giovani.giovani@gmail.com'] ) }}
+         </div>
     
 
           <div class="form-group">

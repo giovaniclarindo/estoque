@@ -10,6 +10,9 @@ use App\Models\User;
 use DB;
 use Auth;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\AvisoPedido;
+
 
 class PedidoController extends Controller
 {
@@ -20,8 +23,8 @@ class PedidoController extends Controller
      */
     public function index()
     {
-        $pedido = Pedido::where('status',1)->orderBy('created_at', 'desc')->get();
-        $numeroDePedidos =Pedido::where('status',1)->count();
+        $pedido = Pedido::where('status', 1)->orderBy('created_at', 'desc')->get();
+        $numeroDePedidos =Pedido::where('status', 1)->count();
         return view('pedido.index', ['pedido' => $pedido ,'numeroDePedidos' => $numeroDePedidos ]);
         // foreach ($pedido->produto as $produto) {
         //  echo ($produto->nome);
@@ -123,8 +126,15 @@ class PedidoController extends Controller
         $pedido = Pedido::find($id);
         $pedido->status = 2;
         $pedido->save();
-        $pedido = Pedido::where('status',2)->orderBy('created_at', 'desc')->get();
-        return view('pedido.andamento', ['pedido' => $pedido]);
+
+        //$destinatario = $pedido->email;
+      
+        $pedidos = Pedido::where('status',2)->orderBy('created_at', 'desc')->get();
+
+        //Envio de email
+        Mail::to($pedido->email)->send(new AvisoPedido($pedido));
+
+        return view('pedido.andamento', ['pedido' => $pedidos]);
     }
 
 

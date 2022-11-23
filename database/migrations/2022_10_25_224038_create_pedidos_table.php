@@ -17,6 +17,7 @@ class CreatePedidosTable extends Migration
             $table->id();
             $table->string('nome');
             $table->string('telefone');
+            $table->string('email');
             $table->text('observacao');
             $table->string('status');
             $table->string('rua');

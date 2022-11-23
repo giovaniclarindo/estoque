@@ -141,6 +141,7 @@ class SiteController extends Controller
             'rua.required' => 'O campo rua é obrigatório!',
             'numero.required' => 'O campo numero é obrigatório!',
             'telefone.required' => 'O campo telefone é obrigatório!',
+            'email.required' => 'O campo email é obrigatório!',
             'observacao.required' => 'O campo observacao é obrigatório!',
             'bairro.required' => 'O campo bairro é obrigatório!',
             'complemento_observacao.required' => 'O campo complemento_observacao é obrigatório!',
@@ -151,6 +152,7 @@ class SiteController extends Controller
             'rua'                     => 'required|min:1',
             'numero'                  => 'required|min:1',
             'telefone'                => 'required|min:1',
+            'email'                   => 'required|min:1',
             'observacao'              => 'required|min:1',
             'bairro'                  => 'required|min:1',
             'complemento_observacao'  => 'required|min:1',
@@ -159,12 +161,13 @@ class SiteController extends Controller
 
 
         $pedido = new Pedido;
-        $pedido->nome      = $request->nome;
-        $pedido->status      = $request->status;
-        $pedido->CEP      = $request->CEP;
-        $pedido->rua      = $request->rua;
+        $pedido->nome                       = $request->nome;
+        $pedido->status                     = $request->status;
+        $pedido->CEP         = $request->CEP;
+        $pedido->rua         = $request->rua;
         $pedido->numero      = $request->numero;
         $pedido->telefone      = $request->telefone;
+        $pedido->email      = $request->email;
         $pedido->bairro      = $request->bairro;
         $pedido->observacao      = $request->observacao;
         $pedido->complemento_observacao      = $request->complemento_observacao;
@@ -189,6 +192,7 @@ class SiteController extends Controller
             }
         }
         $request->session()->forget('cart');
+        
         return redirect()->route('marmitaria.index')->with('message', "Seu pedido foi recebido e em breve entraremos em contato para confirmar a forma de pagamento ");
 
 
