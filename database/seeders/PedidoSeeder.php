@@ -17,7 +17,7 @@ class PedidoSeeder extends Seeder
     {
         Pedido::create([
             
-            'nome'                    => 'lucas' ,
+            'nome'                    => 'Giovani' ,
             'telefone'                => '21969934621',
             'email'                   => 'giovani.giovani@gmail.com',
             'observacao'              => 'sem mostard',

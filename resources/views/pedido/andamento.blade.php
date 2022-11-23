@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Gardenia - Pedidos em andamento')
+@section('title', 'Marmitaria - Pedidos em andamento')
 
 @section('content_header')
     <h1 style="text-align:center">Em andamento</h1>

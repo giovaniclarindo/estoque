@@ -29,7 +29,7 @@ class ProdutoSeeder extends Seeder
             'quantidade'   => 14,
             'valor'        => 14,
             'descricao'    => 'Panquecas integral de carne com mix de legumes.',
-            'categoria_id' => 2
+            'categoria_id' => 1
         ]);
 
         Produto::create([
@@ -37,7 +37,7 @@ class ProdutoSeeder extends Seeder
             'quantidade'   => 14,
             'valor'        => 14,
             'descricao'    => 'Coxa e sobrecoxa com arroz e feijão e legumes.',
-            'categoria_id' => 3,
+            'categoria_id' => 1,
         ]);
 
         Produto::create([
@@ -45,7 +45,7 @@ class ProdutoSeeder extends Seeder
             'quantidade'   => 14,
             'valor'        => 14,
             'descricao'    => 'Strogonoff de carne, arroz integral , brócolis e abobrinhas.',
-            'categoria_id' => 3
+            'categoria_id' => 1
         ]);
     }
 }

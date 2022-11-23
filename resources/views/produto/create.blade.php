@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Gardenia - Criar produtos')
+@section('title', 'marmitaria - Criar produtos')
 
 @section('content_header')
     <h1 style="text-align: center">Produtos</h1>

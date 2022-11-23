@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Doceria Gardenia ADM - Lista De Produtos')
+@section('title', 'Marmitaria ADM - Lista De Produtos')
 
 @section('content_header')
     <h1 style="text-align: center">Produtos</h1>

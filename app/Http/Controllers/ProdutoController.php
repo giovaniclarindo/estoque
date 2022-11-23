@@ -46,7 +46,7 @@ class ProdutoController extends Controller
         ];
 
         $validateData = $request->validate([
-            'nome'          => 'required|min:7',
+            'nome'          => 'required|min:5',
             'descricao'     => 'required',
             'valor'         => 'required',
             'categoria_id'  => 'required',
@@ -55,12 +55,12 @@ class ProdutoController extends Controller
 
 
         $produto = new Produto;
-        $produto->nome      = $request->nome;
-        $produto->descricao = $request->descricao;
-        $produto->valor = $request->valor;
-        $produto->categoria_id = $request->categoria_id;
-        $produto->quantidade = 0;
-        $produto->promocao = $request->promocao;
+        $produto->nome          = $request->nome;
+        $produto->descricao     = $request->descricao;
+        $produto->valor         = $request->valor;
+        $produto->categoria_id  = $request->categoria_id;
+        $produto->quantidade    = 0;
+        $produto->promocao      = $request->promocao;
         
         $produto->save();
 
@@ -118,10 +118,10 @@ class ProdutoController extends Controller
         ], $message);
 
         $produto = Produto::findOrFail($id);
-        $produto->nome      =$request->nome;
-        $produto->valor     = $request->valor;
-        $produto->descricao = $request->descricao;
-        $produto->categoria_id = $request->categoria_id;
+        $produto->nome          =$request->nome;
+        $produto->valor         = $request->valor;
+        $produto->descricao     = $request->descricao;
+        $produto->categoria_id  = $request->categoria_id;
 
         $produto->save();
        

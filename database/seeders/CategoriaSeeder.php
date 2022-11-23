@@ -17,20 +17,15 @@ class CategoriaSeeder extends Seeder
     {
         Categoria::create([
             'id'   => 1,
-            'nome' => 'Proteína'
+            'nome' => 'Recomendada'
 
         ]);
 
         Categoria::create([
             'id'   => 2,
-            'nome' => 'Carboidrato'
+            'nome' => 'Personalizada'
 
         ]);
 
-        Categoria::create([
-            'id'   => 3,
-            'nome' => 'Vegetal'
-
-        ]);
     }
 }

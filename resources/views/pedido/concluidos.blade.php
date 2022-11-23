@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Gardenia - Pedidos concluidos')
+@section('title', 'Marmitaria - Pedidos concluidos')
 
 @section('content_header')
     <h1 style="text-align: center;">Concluidos</h1>
