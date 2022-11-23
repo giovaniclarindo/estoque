@@ -30,7 +30,7 @@
               </p>
             </div>
             <img
-                src="{{ asset('/site/src/img/logo-marmitas.png')}}"
+                src="{{ asset('/site/src/img/Logo-marmitas-fundo-branco.jpg')}}"
                 alt=""
               />
           </article>

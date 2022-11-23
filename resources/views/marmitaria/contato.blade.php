@@ -1,5 +1,6 @@
 @extends('components.layout')
 
+@section('title','Contato Marmitaria')
 
 @section('content')
     <!-- Começo do header -->

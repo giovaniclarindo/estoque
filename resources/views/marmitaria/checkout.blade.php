@@ -3,7 +3,7 @@
 
 @extends('components.layout')
 
-@section('title','Doceria Gardenia - checkout')
+@section('title','Marmitaria - checkout')
 
 @section('inicio','Opa, Estamos Quase Lá!')
 

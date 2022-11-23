@@ -1,6 +1,6 @@
 @extends('components.layout')
 
-@section('title','Doceria Gardenia - Conheça Nossos Maravilhosos Podutos')
+@section('title','Marmitaria - Conheça Nossos Maravilhosos Podutos')
 
 @section('inicio', 'Produto')
 

@@ -1,6 +1,6 @@
 @extends('components.layout')
 
-@section('title','Doceria Gardenia')
+@section('title','Marmitaria')
 
 @section('inicio', 'Bem vindo')
 
